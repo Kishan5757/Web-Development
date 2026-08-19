@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 2px;
+            padding: 14px;
+            margin: 14px;
+            background-color: lightblue;
+            text-align: center;
+        }
+
+        .childcontainer {
+            border: 2px;
+            padding: 14px;
+            margin: 14px;
+            background-color: lightgreen;
+        }
+
+        .child {
+            border: 2px;
+            padding: 14px;
+            margin: 14px;
+            background-color: lightpink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="childcontainer">
+            <div class="child">
+                I am child
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelector(".child").addEventListener("click", (e) => {
+            // e.stopPropagation()
+            alert("Child Was clicked")
+        })
+
+        document.querySelector(".childcontainer").addEventListener("click", (e) => {
+            // e.stopPropagation()
+            alert("childContainer Was clicked")
+        })
+
+        document.querySelector(".container").addEventListener("click", (e) => {
+            alert("container Was clicked")
+        })
+        function getRandomColor() {
+            let val1 = Math.ceil(0 + Math.random() * 255);
+            let val2 = Math.ceil(0 + Math.random() * 255);
+            let val3 = Math.ceil(0 + Math.random() * 255);
+            return `rgb(${val1}, ${val2}, ${val3})`
+        }
+
+        let a=setInterval(() => {
+            document.querySelector(".childcontainer").style.backgroundColor = getRandomColor()
+        }, 2000);
+        // clearInterval(a); this is used to stop the interval
+        let b=setTimeout(() => {    
+            document.querySelector(".child").style.backgroundColor = getRandomColor()
+        }, 5000);
+        // clearTimeout(b); this is used to stop the timeout
+    </script>
+</body>
+
+</html>

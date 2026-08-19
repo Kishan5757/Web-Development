@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More about selectors</title>
+    <style>
+        .c *{ /*this is a universal selector inside a class selector*/
+            border: 2px solid black;
+            padding: 5px;
+        }
+        .c :nth-child(2) { /*this is a pseudo-class selector*/
+            background-color: lightblue;
+        }
+        .c :nth-last-child(3) { /*this is another pseudo-class selector*/
+            background-color: lightgreen;
+        }
+        .c ::first-letter { /*this is a pseudo-element selector*/
+            font-size: 2em;
+            color: red;
+        }
+        .c ::first-line { /*this is another pseudo-element selector*/
+            font-weight: bold;
+            color: blue;
+        }
+        .c :not(.l) { /*this is a negation pseudo-class selector*/
+            color: gray;
+        }
+        div, .c, .l { /*this is a group selector*/
+            font-family: Arial, sans-serif;
+            margin: 10px;
+        }
+        .c ::before { /*this is a pseudo-element selector for content before an element*/
+            content: "Before: ";
+            color: green;
+        }
+        .c ::after { /*this is a pseudo-element selector for content after an element*/
+            content: " After";
+            color: purple;
+        }
+        ::selection{
+            background-color: black;
+            color: aqua;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="c">
+        <div class="l">I am the
+            
+        </div>
+        <div class="l">i am ther</div>
+        <div class="l">i am where</div>
+    </div>
+</body>
+</html>

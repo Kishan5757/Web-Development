@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Show Interface Example</title>
+  <style>
+    #interfaceBox {
+      display: none; /* hidden at first */
+      margin-top: 20px;
+      padding: 20px;
+      width: 300px;
+      background: #f0f0f0;
+      border: 2px solid #333;
+      border-radius: 10px;
+    }
+    button {
+      padding: 10px 20px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <button id="showBtn">Show Interface</button>
+
+  <div id="interfaceBox">
+    <h2>Welcome!</h2>
+    <p>This is the interface that appears after clicking the button.</p>
+  </div>
+
+  <script>
+    const button = document.getElementById("showBtn");
+    const box = document.getElementById("interfaceBox");
+
+    button.addEventListener("click", () => {
+      // Toggle visibility
+      if (box.style.display === "none" || box.style.display === "") {
+        box.style.display = "block";
+      } else {
+        box.style.display = "none";
+      }
+    });
+  </script>
+</body>
+</html>

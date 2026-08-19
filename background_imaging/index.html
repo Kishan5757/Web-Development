@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+    <style>
+        .con {
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            background-image: linear-gradient(to right, red, yellow);
+            /* background-image: radial-gradient(circle, blue, white); */
+            background-image: url('shanks.jpeg');
+            background-size: cover;
+            background-size: contain;
+            background-position: center;
+            background-image: url("shanks.jpeg"), linear-gradient(to bottom, rgb(233, 249, 7), navy);
+            background-repeat: no-repeat;
+
+        }
+
+        img {
+            width: 50%;
+            height: 50%;
+            object-fit: cover;
+            /* object-fit: contain; */
+            /* object-fit: fill; */
+            /* object-fit: none; */
+            /* object-fit: scale-down; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="con">
+        <!-- <img src="shanks.jpeg" alt="shanks"> -->
+    </div>
+</body>
+
+</html>

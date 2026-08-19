@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=Math.floor(Math.random()*100)+1;
+        let b=prompt("Guess the number between 1 and 100:");
+        while(b!=a){
+            if(b<a){
+                b=prompt("Too low! Try again:");
+            } else {
+                b=prompt("Too high! Try again:");
+            }
+        }
+        alert("Correct!");
+    </script>
+</body>
+</html>

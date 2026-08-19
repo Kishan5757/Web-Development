@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css float and clear</title>
+    <style>
+        img {
+            float: left;
+        }
+        
+        .cards {
+            display: flow-root;
+            border: 2px solid black;
+        }
+        .card{
+            border: 2px solid red;
+        }
+        .card:nth-child(2) {
+            float: right;
+        }
+        .card:nth-child(3) {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cards">
+        <img src="shanks.jpeg" alt="shanks" width="300">
+        <div class="card">card1</div>
+        <div class="card">card2</div>
+        <div class="card">card3</div>
+    </div>
+</body>
+
+</html>

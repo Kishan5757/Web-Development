@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        #fruits option{
+            border-radius: 7px ;
+            margin: 2px;
+            background-color: lightskyblue;
+            color: black
+        }
+    </style>
+</head>
+<body>
+    <h1>Form : -</h1>
+    <div>
+        <label for="username">Enter your user name</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username"><!--id is used to link the label and input-->
+    </div>
+    <div>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+    </div>
+    <div>
+        <label for="sub">check</label>
+        <input type="checkbox" id="sub" name="subscribe" value="yes">
+    </div>
+    <div>
+        <label for="text">Enter your text:-</label>
+        <br>
+        <textarea id="text" name="text" rows="4" cols="50" placeholder="Enter your text here"></textarea>
+    </div>
+    <div>
+        <label for="fruits">fruits</label>
+        <select id="fruits" name="fruits">
+            <option value="apple">Apple</option>
+            <option value="banana">Banana</option>
+            <option value="orange">Orange</option>
+            <option value="grape">Grape</option>
+        </select>
+    </div>
+</body>
+</html>

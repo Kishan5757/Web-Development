@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr>This is a simple Rock-Paper-Scissors game against the computer.<hr>
+    a<sup>2<sup>3</sup></sup>
+    <script>
+        let a=['r','p','s']
+        
+        let q=1
+        while(q==1){
+            let b=prompt("Enter rock, paper, or scissors:");
+            let c=a[Math.floor(Math.random()*3)];
+            if(b=="rock"){
+                if (c=='r'){
+                    alert("Draw! Computer chose rock.");
+                }
+                else if(c=='p'){
+                    alert("You lose! Computer chose paper.");
+                }
+                else{
+                    alert("You win! Computer chose scissors.");
+                }
+            }
+            else if(b=="paper"){
+                if (c=='r'){
+                    alert("You win! Computer chose rock.");
+                }
+                else if(c=='p'){
+                    alert("Draw! Computer chose paper.");
+                }
+                else{
+                    alert("You lose! Computer chose scissors.");
+                }
+            }
+            else if(b=="scissors"){
+                if (c=='r'){
+                    alert("You lose! Computer chose rock.");
+                }
+                else if(c=='p'){
+                    alert("You win! Computer chose paper.");
+                }
+                else{
+                    alert("Draw! Computer chose scissors.");
+                }
+            }
+            else{
+                alert("Invalid input. Please enter rock, paper, or scissors.");
+            }
+            q=prompt("Do you want to play again? Enter 1 for yes, 0 for no:");
+            
+        }
+    </script>
+</body>
+</html>

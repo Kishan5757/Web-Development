@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Ball
+    </title>
+    <style>
+        .cont{
+            width: 90vw;
+            height: 90vh;
+            background-color: black;
+            position: relative;
+        }
+        .ball{
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            animation: movelinr 5s linear infinite alternate,moveup 2s ease-out infinite alternate;
+        }
+        @keyframes movelinr {
+            from{
+                left: 0;
+            }
+            to{
+                left: 90%;
+            }
+        }
+        @keyframes moveup {
+            from{
+                bottom: 0;
+            }
+            to{
+                bottom: 40%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>

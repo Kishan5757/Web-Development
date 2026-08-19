@@ -1,0 +1,12 @@
+let k="Kishan"
+console.log(k.length)
+console.log(k.toUpperCase())
+console.log(k.toLowerCase())
+console.log(k.slice(1,4))
+console.log(k.replace("K","P"))
+console.log(k.concat(" Patel"))
+console.log(`My name is ${k}`)
+console.log(k.charAt(2))
+console.log(k.indexOf("h"))
+console.log(k.lastIndexOf("h"))
+console.log(k.includes("h"))

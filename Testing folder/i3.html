@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CSS Attribute Selector Demo</title>
+<style>
+/* 1. Attribute present */
+p[title] {
+  background-color: lightblue;
+}
+
+/* 2. Exact match */
+a[target="_blank"] {
+  color: red;
+}
+
+/* 3. Value contains word */
+div[class~="highlight"] {
+  border: 2px solid orange;
+}
+
+/* 4. Value starts with */
+input[name^="user"] {
+  background-color: lightgreen;
+}
+
+/* 5. Value ends with */
+img[src$=".png"] {
+  border: 3px solid blue;
+}
+
+/* 6. Value contains substring */
+li[data-info*="special"] {
+  font-weight: bold;
+}
+
+/* 7. Hyphen-separated value */
+span[lang|="en"] {
+  color: purple;
+}
+</style>
+</head>
+<body>
+
+<h2>CSS Attribute Selector Examples</h2>
+
+<!-- 1. Attribute present -->
+<p title="info">This paragraph has a "title" attribute.</p>
+<p>No title here.</p>
+
+<!-- 2. Exact match -->
+<a href="https://example.com" target="_blank">Opens in new tab</a>
+<a href="https://example.com" target="_self">Opens in same tab</a>
+
+<!-- 3. Value contains word -->
+<div class="box highlight">This div has class "highlight".</div>
+<div class="box">This div does not.</div>
+
+<!-- 4. Value starts with -->
+<input type="text" name="username" placeholder="Username">
+<input type="text" name="email" placeholder="Email">
+
+<!-- 5. Value ends with -->
+<img src="photo.png" alt="PNG Example" width="50">
+<img src="photo.jpg" alt="JPG Example" width="50">
+
+<!-- 6. Value contains substring -->
+<ul>
+  <li data-info="special-item">Special item</li>
+  <li data-info="normal-item">Normal item</li>
+</ul>
+
+<!-- 7. Hyphen-separated value -->
+<span lang="en">English text</span>
+<span lang="en-US">US English text</span>
+<span lang="fr">French text</span>
+
+</body>
+</html>

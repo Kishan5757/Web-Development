@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block vs Inline Elements</title>
+    <style>
+        .block {
+            border: 2px solid red;
+            background-color: #ffe5e5;
+            margin: 5px 0;
+        }
+        .inline {
+            border: 2px solid blue;
+            background-color: #e5f0ff;
+        }
+    </style>
+</head>
+<body>
+    <h2>Block-level elements</h2>
+    <div class="block">DIV - Block element</div>
+    <p class="block">P - Block element</p>
+    <section class="block">SECTION - Block element</section>
+
+    <h2>Inline elements</h2>
+    <span class="inline">SPAN - Inline element</span>
+    <a href="#" class="inline">A - Inline element</a>
+    <strong class="inline">STRONG - Inline element</strong>
+
+    <h2>Mixed example</h2>
+    <p class="block">
+        I am a paragraph (block).
+        <span class="inline">I am a span (inline)</span>
+        <a href="#" class="inline">I am a link (inline)</a>
+    </p>
+</body>
+</html>

@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #c4a3c4;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+}
+
+/* 1️⃣ #playing-cards uses flexbox */
+#playing-cards {
+  display: flex;
+  justify-content: center;   /* horizontally center children */
+  flex-wrap: wrap;           /* allow wrapping */
+  gap: 20px;                 /* 20px space between cards */
+}
+
+/* 2️⃣ .card uses flexbox with space-between */
+.card {
+  display: flex;
+  justify-content: space-between;
+  height: 180px;
+  width: 140px;
+  padding: 10px;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* 3️⃣ .left aligns at start */
+.left {
+  align-self: flex-start;
+}
+
+/* 4️⃣ .middle aligns at center + column layout */
+.middle {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 40px;
+}
+
+/* 5️⃣ .right aligns at end */
+.right {
+  align-self: flex-end;
+  transform: rotate(180deg);
+}
+
+/* Style numbers */
+.left div:first-child,
+.right div:first-child {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.rotate{
+    transform: rotate(180deg);
+}

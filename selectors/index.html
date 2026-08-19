@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <style>
+        /* element selector */
+        div {
+            background-color: black;
+            color: thistle;
+        }
+
+        /* class selector */
+        .flash {
+            background-color: yellow;
+            color: red;
+        }
+
+        /* id selector */
+        #un {
+            background-color: green;
+            color: white;
+        }
+
+        /* universal selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* child selector */
+        div>p {
+            color: blue;
+            background-color: lightgreen;
+        }
+
+        /* descendant selector */
+        div p {
+            color: orange;
+            background-color: lightblue;
+        }
+        /* attribute selector */
+        [target="_blank"] {
+            font-weight: bold;
+            background-color: lightgray;
+        }
+
+        /* pseudo selector */
+        a:visited {
+            color: aquamarine;
+        }
+
+        a:link {
+            color: blue;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        a:active {
+            color: green;
+        }
+
+        p:first-child {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        i am adiv
+    </div>
+    <div class="flash">
+        I am also a div
+        <p id="un">I am a para</p>
+        <span>I am a span
+            <p>I am also a para</p>
+        </span>
+    </div>
+    <a target="_blank" href="https://www.google.com">Google</a>
+    <a target="_blank" href="https://www.amazon.com">Amazon</a>
+</body>
+
+</html>

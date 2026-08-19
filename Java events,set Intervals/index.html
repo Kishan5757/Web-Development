@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        Hey I am King of HELL
+        <div class="box">
+            <button id="btn">click</button>
+        </div>
+    </div>
+    <script>
+        let b = document.getElementById('btn');
+        b.addEventListener('click', () => {
+            alert("I am clicked");
+            document.querySelector('.container').innerHTML = "<b>ZORO</b>";
+        })
+        // button.addEventListener("dblclick", () => {
+        //     document.querySelector(".box").innerHTML = "<b>Yayy you were clicked</b> Enjoy your click!"
+        // })
+
+        // button.addEventListener("contextmenu", () => {
+        //     alert("Dont hack us by Right click Please")
+        // })
+
+        // document.addEventListener("keydown", (e) => {
+        //     console.log(e, e.key, e.keyCode)
+        // })
+    </script>
+</body>
+
+</html>

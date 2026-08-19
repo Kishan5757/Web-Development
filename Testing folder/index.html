@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Target only <p> elements with class "highlight"
+   that are direct children of .container */
+.container > p.highlight {
+    color: white;
+    background-color: darkblue;
+    padding: 5px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <p class="highlight">✅ Styled — direct child of .container</p>
+    <p>❌ Not styled — no "highlight" class</p>
+
+    <div>
+        <p class="highlight">❌ Not styled — has class but is nested deeper</p>
+    </div>
+</div>
+
+</body>
+</html>

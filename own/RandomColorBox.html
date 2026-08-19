@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 45px;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 45px;
+            height: 45px;
+            border: 2px solid black;
+            border-radius: 7px;
+            padding: 23px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">Box</div>
+        <div class="box">Box</div>
+        <div class="box">Box</div>
+        <div class="box">Box</div>
+        <div class="box">Box</div>
+    </div>
+    <script>
+        // This is the formula to generate random number b/w max and min included
+        //         function getRndInteger(min, max) {
+        //   return Math.floor(Math.random() * (max - min + 1) ) + min;
+        // }
+        function getRandomnumber(){
+            let e1=Math.floor(Math.random()*256);
+            let e2=Math.floor(Math.random()*256);
+            let e3=Math.floor(Math.random()*256);
+            return `rgb(${e1},${e2},${e3})`;
+        }
+        let boxes=document.getElementsByClassName('box');
+        Array.from(boxes).forEach((box)=>{
+            box.style.backgroundColor=getRandomnumber();
+        })
+        console.log(Array.from(boxes));
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css media query</title>
+    <style>
+        .b {
+            height: 233px;
+            width: 233px;
+            border: 1px solid black;
+            display: inline-block;
+            text-align: center;
+        }
+        @media screen and (orientation: portrait) {
+            .b{
+                border: 3px solid black;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            .b1 {
+                background-color: red;
+            }
+            .b2 {
+                background-color: green;
+            }
+            .b3 {
+                background-color: blue;
+            }
+            .b4 {
+                background-color: yellow;
+            }
+            .b{
+                color: white;
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class=" b b1">BOX</div>
+    <div class=" b b2">BOX</div>
+    <div class=" b b3">BOX</div>
+    <div class=" b b4">BOX</div>
+</body>
+
+</html>

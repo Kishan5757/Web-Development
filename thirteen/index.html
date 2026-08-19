@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>specificity</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .yellow {
+            color: yellow;
+        }
+
+        .blue {
+            color: blue;
+        }
+
+        .red.yellow.blue { /* This is a combination of classes with a specificity of 30 */
+            color: green;
+            /* This will override the individual colors due to specificity */
+        }
+
+        .yellow.blue.red {
+            color: purple;
+            /* This will also override the individual colors due to specificity */
+        }
+
+        /* In specificity:- the order is
+1. Inline styles
+2. IDs
+3. Classes
+4. Elements or attribute selectors
+5. Universal selector
+Above all is the !important rule which overrides all other styles. */
+        /* The value of specificity
+Universal selector=0
+elemental and pseudo element selectors=1
+        class selectors=10
+        ID selectors=100
+        inline styles=1000
+        !important=10000 */
+        .red.yellow.blue {
+            color: pink !important;
+            /* This will override all other styles */
+        }
+        [data-class="a"]{
+            color: orange;
+            /* This is an attribute selector with specificity of 10 */
+        }
+    </style>
+</head>
+
+<body>
+    <h1 data-class="a">This is about specificity</h1>
+    <p class="red yellow blue">This is a para Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus saepe
+        asperiores, id incidunt laboriosam pariatur? Excepturi error eum libero impedit expedita fuga, culpa in commodi.
+        Ex voluptatum mollitia harum modi!</p>
+</body>
+
+</html>

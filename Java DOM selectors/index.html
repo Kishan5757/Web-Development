@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .box{
+            width: 34px;
+            height: 34px;
+            border: 2px solid black;
+            margin: 23px;
+            padding: 23px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box1</div>
+        <div id="green" class="box">Box2</div>
+        <div class="box">Box3</div>
+        <div class="box">Box4</div>
+        <div class="box">Box5</div>
+    </div>
+    <script>
+        let a=document.getElementsByClassName("box");
+        console.log(a);
+        a.backgroundColor="red"; // it will not work because it is an array 
+        for(let i=0;i<a.length;i++){
+            a[i].style.backgroundColor="red"; // it will work
+        }
+        let b=document.getElementById("green");
+        console.log(b);
+        b.style.color="white";
+        document.querySelector(".box").style.backgroundColor="green"; // it will select the first element with class box
+        let c=document.querySelectorAll(".box");
+        console.log(c);
+        c.forEach(element => {
+            element.style.fontSize="20px";
+        });
+    </script>
+</body>
+</html>

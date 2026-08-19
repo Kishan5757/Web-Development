@@ -1,0 +1,113 @@
+
+        body {
+            text-align: center;
+            background-color: black;
+        }
+
+        .parent {
+            background-color: white;
+            display: inline-block;
+            text-align: center;
+            border: #ddd 1px solid;
+            border-radius: 23px;
+            padding: 6px;
+        }
+
+        #h h1 {
+            text-shadow: 5px 5px 10px gray;
+        }
+
+        #i img {
+            border: 1px solid #ddd;
+            border-radius: 40px;
+            height: 40vh;
+            width: auto;
+            box-shadow:
+                0 0 25px 10px rgba(255, 0, 0, 0.3),
+                0 0 25px 10px rgba(0, 255, 0, 0.3);
+        }
+        
+        #a {
+            color: green;
+            border: 3px solid #ddd;
+            border-radius: 9px;
+            display: inline-block;
+            position: relative;
+            left: px;
+        }
+
+        #b {
+            color: red;
+            border: 3px solid #ddd;
+            border-radius: 9px;
+            display: inline-block;
+            position: relative;
+            left: 20px;
+        }
+
+        #c {
+            color: blue;
+            border: 3px solid #ddd;
+            border-radius: 9px;
+            display: inline-block;
+            position: relative;
+            left: 40px;
+        }
+
+        .l h2 {
+            text-shadow:
+                0 0 15px rgba(255, 0, 0, 0.5),
+                0 0 15px rgba(0, 255, 0, 0.5);
+        }
+
+        #d {
+            color: rgb(146, 144, 140);
+            border: white 1px solid;
+            width: 300px;
+            height: auto;
+            text-align: center;
+            margin: 0 auto;
+            line-height: 1.6;
+
+        }
+
+        #e {
+            font-weight: 100;
+            color: rgb(101, 101, 236);
+            background-color: rgb(215, 215, 244);
+            border: 3px solid #ddd;
+            border-radius: 10px;
+            display: inline-block;
+            position: relative;
+
+
+        }
+
+        .year {
+            border: 2px solid #ddd;
+            box-shadow:
+                0 0 25px 10px rgba(255, 0, 0, 0.3),
+                0 0 25px 10px rgba(0, 255, 0, 0.3);
+            display: inline-block;            
+            padding: 2px;          
+            border-radius: 10px;
+           list-style: hover;
+
+        }
+        .year:hover {
+            box-shadow:
+                0 0 25px 10px rgba(255, 0, 0, 0.5),
+                0 0 25px 10px rgba(0, 255, 0, 0.5);
+            transform: scale(1.05);
+            transition: all 0.3s ease-in-out;
+        }
+        .e a:active {
+            color: rgb(101, 101, 236);
+            background-color: rgb(215, 215, 244);
+            border: 3px solid #ddd;
+            border-radius: 10px;
+            display: inline-block;
+            position: relative;
+            text-decoration: none;
+
+        }

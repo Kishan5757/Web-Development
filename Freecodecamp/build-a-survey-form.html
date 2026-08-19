@@ -1,0 +1,94 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 id="title">Hotel Survey Form</h1>
+    </header>
+    <main>
+      <p id="description">Please fill out this survey to help us improve.</p>
+
+      <form id="survey-form">
+        <fieldset>
+          <legend>Thank you for taking the time to help us improve the platform</legend>
+        <label id="name-label" for="name">Name:</label>
+        <input id="name" type="text" placeholder="Enter your name" name="name" required>
+        <br>
+        <label id="email-label" for="email">Email:</label>
+        <input id="email" type="email" placeholder="Enter your email" name="email" required>
+        <br>
+        <label id="number-label" for="number">Age:-</label>
+        <input id="number" type="number" name="age" placeholder="Age" min="10" max="100" required>
+        <br>
+        </fieldset>
+        <br>
+        <fieldset>
+        <legend>Enter youe gender:-</legend>
+        <select id="dropdown"> 
+          <option value="" disabled selected>Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="others">Others</option>
+        </select>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Rate the performance</legend>
+          <label for="poor">Poor</label>
+          <input id="poor" name="rating" type="radio" value="poor"/>
+          <label for="avg">Average</label>
+          <input id="avg" name="rating" type="radio" value="average"/>
+          <label for="good">Good</label>
+          <input id="good" name="rating" type="radio" value="good"/>
+          <label for="exc">Excelent</label>
+          <input id="exc" name="rating" type="radio" value="excelent"/>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Areas where to improve:-</legend>
+          <label for="power">Modern Power & Connectivity</label>
+          <input id="power" type="checkbox" value="Power_problem" name="power" />
+          <br>
+          <label for="light">Lighting Logic</label>
+          <input id="light" type="checkbox" value="Lighting_Logic" name="ligthing" />
+          <br>
+          <label for="space">The "Third Space" Lobby</label>
+          <input id="space" type="checkbox" value="spacing" name="space"/>
+          <br>
+          <label for="bath">Bathroom UX (User Experience)</label>
+          <input id="bath" type="checkbox" value="bath" name="bath" />
+          <br>
+          <label for="local">Authentic Local Curation</label>
+          <input id="local" type="checkbox" value="local" name="local"/>
+          <br>
+          <label for="in_out">Seamless Check-in/Out</label>
+          <input id="in_out" type="checkbox" value="in_out" name="in_out"/>
+          <br>
+          <label for="fitness">Fitness & Wellness Versatility</label>
+          <input id="fitness" type="checkbox" value="fitness" name="fitness"/>
+          <br>
+          <label for="privacy">Acoustic Privacy</label>
+          <input id="privacy" type="checkbox" value="Privacy" name="privacy"/>
+          <br>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Any comments or suggestions?</legend>
+          <label for="comments">Other Comments?</label>
+          <br>
+        <textarea cols="30" rows="10" name="comments" id="comments" placeholder="Any comment"></textarea>
+        </fieldset>
+        <br>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
+
+
