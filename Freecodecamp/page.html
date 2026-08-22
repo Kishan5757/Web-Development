@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AeroAudio - Premium Wireless Sound</title>
+  <link rel="stylesheet" href="page.css">
+</head>
+<body>
+
+  <!-- Requirement: Header with id="header" -->
+  <header id="header">
+    <div class="logo-container">
+      <!-- Requirement: Image with id="header-img" -->
+      <img id="header-img" src="https://cdn-icons-png.flaticon.com/512/3039/3039404.png" alt="AeroAudio Logo">
+      <span>AeroAudio</span>
+    </div>
+
+    <!-- Requirement: Nav element with id="nav-bar" -->
+    <nav id="nav-bar">
+      <ul>
+        <!-- Requirement: At least 3 clickable .nav-link items targeting page sections -->
+        <li><a class="nav-link" href="#features">Features</a></li>
+        <li><a class="nav-link" href="#demo">How It Works</a></li>
+        <li><a class="nav-link" href="#pricing">Pricing</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero / Newsletter Form Section -->
+    <section id="hero">
+      <h2>Experience Studio-Quality Sound</h2>
+      <p>Sign up now to get exclusive launch pricing and early access.</p>
+      
+      <!-- Requirement: Form with id="form" submitting to exact URL -->
+      <form id="form" action="https://www.freecodecamp.org/email-submit" method="POST">
+        <!-- Requirement: Input with id="email", placeholder, and HTML5 email validation -->
+        <input 
+          type="email" 
+          id="email" 
+          name="email" 
+          placeholder="Enter your email address" 
+          required
+        >
+        <!-- Requirement: Submit button with id="submit" -->
+        <input type="submit" id="submit" value="Get Started">
+      </form>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+      <div class="feature-item">
+        <div class="feature-icon">🎧</div>
+        <div>
+          <h3>Active Noise Cancellation</h3>
+          <p>Blocks out unwanted environmental noise so you can focus purely on your music.</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">⚡</div>
+        <div>
+          <h3>Fast Charging</h3>
+          <p>10 minutes of charge provides up to 3 hours of playback time via USB-C.</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🔋</div>
+        <div>
+          <h3>40-Hour Battery Life</h3>
+          <p>Listen all day and night without worrying about running out of power.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video Demo Section -->
+    <section id="demo">
+      <div class="video-container">
+        <!-- Requirement: Embedded video with id="video" -->
+        <iframe 
+          id="video" 
+          src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" 
+          title="Product Demo Video"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing">
+      <div class="product-card">
+        <h3>Aero Lite</h3>
+        <p class="price">$99</p>
+        <ul>
+          <li>Standard Audio</li>
+          <li>20-Hour Battery</li>
+          <li>Bluetooth 5.0</li>
+        </ul>
+        <button class="btn">Select</button>
+      </div>
+
+      <div class="product-card">
+        <h3>Aero Pro</h3>
+        <p class="price">$199</p>
+        <ul>
+          <li>Spatial Audio</li>
+          <li>40-Hour Battery</li>
+          <li>Active Noise Control</li>
+        </ul>
+        <button class="btn">Select</button>
+      </div>
+
+      <div class="product-card">
+        <h3>Aero Studio</h3>
+        <p class="price">$299</p>
+        <ul>
+          <li>Lossless Hi-Fi Audio</li>
+          <li>50-Hour Battery</li>
+          <li>Custom Sound Profiles</li>
+        </ul>
+        <button class="btn">Select</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; AeroAudio Technologies. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
